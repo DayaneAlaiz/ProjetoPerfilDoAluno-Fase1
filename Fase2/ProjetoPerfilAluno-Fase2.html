@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Aluno</title>
+</head>
+<body>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
+   
+        <h1 style="color: green;">Perfil do Aluno</h1> <hr>
+         
+      
+    </body>
+    <h2 style="color: green;">Foto de perfil</h2>
+   
+   
+    <p><img src=" https://upload.wikimedia.org/wikipedia/pt/5/59/Magali.png"
+    alt="Magali" width="100">
+    
+    <title>Mover Imagem com Setas src=" https://upload.wikimedia.org/wikipedia/pt/5/59/Magali.png"
+        alt="Magali" width="100"> </title>
+  
+    
+    <style>
+         <p><img src=" https://upload.wikimedia.org/wikipedia/pt/5/59/Magali.png"
+    alt="Magali" width="100">
+        /* Centralizar a imagem na página */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilo da imagem */
+        img {
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        /* Estilo das setas */
+        .arrow {
+            cursor: pointer;
+            font-size: 24px;
+            margin: 0 10px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <span class="arrow" onclick="moveLeft()">⬅️</span>
+    <img id="imagem" src="sua-imagem.png" alt="Imagem">
+    <span class="arrow" onclick="moveRight()">➡️</span>
+</div>
+
+<script>
+    let position = 0; // Posição inicial
+
+    function moveLeft() {
+        position -= 10; // Move 10px para a esquerda
+        document.getElementById("imagem").style.transform = `translateX(${position}px)`;
+    }
+
+    function moveRight() {
+        position += 10; // Move 10px para a direita
+        document.getElementById("imagem").style.transform = `translateX(${position}px)`;
+    }
+</script>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome Completo</th>
+                <th>RA
+                <th>Curso e Período Atual</th>
+                <th>Endereço Completo</th>
+                <th>E-mail</th>
+                <th>UCs já cursadas</th>
+            </tr>
+       
+        <tbody>
+            <tr>
+                <td>Dayane Alaiz do Carmo Gomes</td>
+                <th>323211729</th>
+                <th>Análise e desenvolvimento de sistemas 3º Período</th>
+                <td>Rua Caiapós, 304 Bairro: Andyara Pedro Leopoldo</td>
+                <td> dayanegomes.tech@gmail.com</td>
+                <td>Sistemas Computacionais e Segurança <hr>
+                Ambientes Computacionais e Conectividade <hr>
+                Programação de Soluções Computacionais <hr>
+                Modelagem de Software</td>
+                                          
+            </tr>
+        </tbody>
+    </table>
+    
+   
+        <h2 style="color: green;">Breve descrição do perfil</h2>
+    <p>Sou uma pessoa apaixonada por pedalar nos fins de semana, minha companhia de pedal é o meu irmão, que também é estudande de tecnologia no centro Universitário UNA. Além disso, faço musculação de 3 a 4 vezes por semana, procuro ter uma alimentação equilibrada para otimizar o processo de hipertrofia muscular que é o meu principal objetivo. Minha família é do Norte de Minas e São Paulo. Amo viajar, passear em parques e visitar museus.</p>
+
+    <h2 style="color: green;">Perfil profissional Acadêmico</h2>
+    <p>Com formação em Nutrição e experiência prática no atendimento a pacientes, apaixonada por tecnologia da informação estou em transição de carreira tendo como principal área de atuação redes de computadores, sendo motivada pelo desejo de aplicar minhas habilidades analíticas em um novo campo.</p>
+
+    <h2 style="color: green;">Redes Sociais</h2>
+    <p>
+        <a href="https://www.linkedin.com/in/dayane-gomes-b510a5310" target="_blank">LinkedIn</a><br>
+        <a href="https://www.instagram.com/dayane.gomespl" target="_blank">Instagram</a>
+    </p>
+</body>
+</html>
